@@ -14,6 +14,10 @@ module Feedzirra
       def self.able_to_parse?(xml) #:nodoc:
         ((/Atom/ =~ xml) && (/feedburner/ =~ xml) && !(/\<rss|\<rdf/ =~ xml)) || false
       end
+
+      def language
+        nil
+      end
     end
 
   end

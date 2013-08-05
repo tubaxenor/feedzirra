@@ -20,6 +20,10 @@ module Feedzirra
         @url || links.last
       end
 
+      def language
+        nil
+      end
+
       def feed_url
         @feed_url ||= links.first
       end

@@ -35,6 +35,10 @@ module Feedzirra
         def url
           @url || @link
         end
+
+        def language
+          nil
+        end 
       
     end
 

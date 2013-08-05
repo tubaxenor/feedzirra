@@ -26,6 +26,10 @@ module Feedzirra
       element :enclosure, :value => :length, :as => :enclosure_length
       element :enclosure, :value => :type, :as => :enclosure_type
       element :enclosure, :value => :url, :as => :enclosure_url
+
+      def language
+        nil
+      end
     end
   end
   

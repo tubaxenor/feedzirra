@@ -20,6 +20,10 @@ module Feedzirra
         %r{<id>https?://docs.google.com/.*\</id\>} =~ xml
       end
 
+      def language
+        nil
+      end
+
       def feed_url
         @feed_url ||= links.first
       end

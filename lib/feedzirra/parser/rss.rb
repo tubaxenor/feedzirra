@@ -7,6 +7,7 @@ module Feedzirra
       include FeedUtilities
       element :title
       element :description
+      element :language
       element :link, :as => :url
       elements :item, :as => :entries, :class => RSSEntry
 

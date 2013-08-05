@@ -28,7 +28,11 @@ module Feedzirra
       element :issued, :as => :published
       elements :category, :as => :categories
       
-      element :guid, :as => :entry_id     
+      element :guid, :as => :entry_id  
+
+      def language
+        nil
+      end   
     end
 
   end
